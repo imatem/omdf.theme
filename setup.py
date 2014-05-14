@@ -41,6 +41,7 @@ setup(
         'Pillow',
         'Plone',
         'setuptools',
+        'plone.app.theming'
     ],
     extras_require={
         'develop': [

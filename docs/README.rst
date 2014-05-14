@@ -1,5 +1,5 @@
 ============================================
-Olimpiada Mátematica del D.F. policy package
+Olimpiada Mátematica del D.F. theme package
 ============================================
 
 :Code status:
