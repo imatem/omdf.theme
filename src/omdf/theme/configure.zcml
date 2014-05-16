@@ -8,13 +8,11 @@
 
     <plone:static
         name="omdf.theme"
-        directory="resources"
+        directory="static"
         type="theme" />
 
     <!-- Include configuration for dependencies listed in setup.py -->
     <includeDependencies package="." />
-
-  <!-- <include package=".resources.views" /> -->
 
     <!-- Register the installation GenericSetup extension profile -->
     <genericsetup:registerProfile
