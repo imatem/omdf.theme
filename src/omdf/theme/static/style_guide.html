@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OMDF Style Guide</title>
+    <!-- <link rel="stylesheet" href="8cols.css"> -->
+    <link rel="stylesheet" href="documentation.css">
+</head>
+<body>
+    <section class="main-content">
+        <h1 class="xx-title">OMDF Guia de Estilos</h1>
+        <main role="main">
+            <div class="pattern">
+                <div class="pattern-details">
+                    <h3 class="pattern-name">Paleta de Colores</h3>
+                </div>
+                <div class="pattern-preview">
+                    <ul class="swatches">
+                        <li class="swatch">
+                            <p class="swatch-preview" style="background-color: #222;">
+                                <span class="swatch-details"><strong>Text:</strong> #222</span>
+                            </p>
+                        </li>
+                        <li class="swatch">
+                            <p class="swatch-preview" style="background-color: #2455c3;">
+                                <span class="swatch-details"><strong>Link:</strong> #2455c3</span>
+                            </p>
+                        </li>
+                        <li class="swatch">
+                            <p class="swatch-preview" style="background-color: #bb3825;">
+                                <span class="swatch-details"><strong>Accent:</strong> #bb3825</span>
+                            </p>
+                        </li>
+                        <li class="swatch">
+                            <p class="swatch-preview" style="background-color: #acba3c;">
+                                <span class="swatch-details"><strong>Accent 2:</strong> #acba3c</span>
+                            </p>
+                        </li>
+                        <li class="swatch">
+                            <p class="swatch-preview" style="background-color: #f0f0f0;">
+                                <span class="swatch-details" style="color: #333;"><strong>Fill:</strong> #f0f0f0</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </section>
+
+<div class="section" id="foundation">
+            <h1 class="section-title">Foundation</h1>
+                    <div id="section-foundation">
+
+                                <h2>General typography</h2>
+    <div class="foundation-content">
+        <div class="item-description">
+            <p>
+                Yelp’s typography pattern is called yType. Its foundation lies in traditional typographical measures.
+            </p>
+            <p>
+                yType utilizes a 6px baseline grid.
+                All pages are designed using spacing units of 6 between different components. This creates a pleasing and predictable vertical rhythm, and extends to our horizontal grid as well.
+            </p>
+            <p>
+                To enable yType on a page, add the following line to the template:
+            </p>
+            <p>
+                <code>#attr $additional_body_classes = ['ytype']</code>
+            </p>
+        </div>
+        <div class="item-example">
+            <div class="island island-light">
+                <h1>Header Level 1 <span class="type-label">36px / 42px</span></h1>
+                <h2>Header Level 2 <span class="type-label">24px / 30px</span></h2>
+                <h3>Header Level 3 <span class="type-label">16px / 21px</span></h3>
+                <p>
+                    This is a paragraph. Morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. <a href="#">This is a link</a>.
+                    <span class="type-label">14px / 18px</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <h2>Grid</h2>
+    <p class="item-description">
+        Yelp is built on a vertical 12-column grid.
+        Column widths are defined as a percentage of their parent and gutters are fixed at 30px, which respects the 6px spacing pattern.
+    </p>
+    <div class="foundation-content">
+            <div class="grid-unit">
+                <div class="sample-content">1</div>
+            </div>
+            <div class="grid-unit">
+                <div class="sample-content">1</div>
+            </div>
+            <div class="grid-unit">
+                <div class="sample-content">1</div>
+            </div>
+            <div class="grid-unit">
+                <div class="sample-content">1</div>
+            </div>
+            <div class="grid-unit">
+                <div class="sample-content">1</div>
+            </div>
+            <div class="grid-unit">
+                <div class="sample-content">1</div>
+            </div>
+            <div class="grid-unit">
+                <div class="sample-content">1</div>
+            </div>
+            <div class="grid-unit">
+                <div class="sample-content">1</div>
+            </div>
+            <div class="grid-unit">
+                <div class="sample-content">1</div>
+            </div>
+            <div class="grid-unit">
+                <div class="sample-content">1</div>
+            </div>
+            <div class="grid-unit">
+                <div class="sample-content">1</div>
+            </div>
+            <div class="grid-unit">
+                <div class="sample-content">1</div>
+            </div>
+    </div>
+
+    <h2>Color palette</h2>
+    <div class="foundation-content">
+        <div class="item-description">
+            <p>Yelp’s primary palette contains red, blue, and warm greys.</p>
+            <p>When designing for Yelp, you are not limited to these colors, but they should be prominent in any consumer facing design.</p>
+        </div>
+        <div class="item-example">
+            <ul class="swatches inline-layout clearfix">
+                    <li>
+                        <div class="swatch dark" style="background: #c41200">
+                            <b>$yelpy-red</b> #c41200
+                        </div>
+                    </li>
+                    <li>
+                        <div class="swatch dark" style="background: #3b65a7">
+                            <b>$blue</b> #3b65a7
+                        </div>
+                    </li>
+                    <li>
+                        <div class="swatch" style="background: #e5e5e1">
+                            <b>$grey-10</b> #e5e5e1
+                        </div>
+                    </li>
+                    <li>
+                        <div class="swatch" style="background: #f5f5f1">
+                            <b>$grey-5</b> #f5f5f1
+                        </div>
+                    </li>
+            </ul>
+        </div>
+    </div>
+
+                    </div>
+        </div>
+
+
+</body>
+</html>

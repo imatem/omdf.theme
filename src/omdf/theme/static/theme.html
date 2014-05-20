@@ -1,17 +1,11 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8">
     <title>Theme template</title>
     <link rel="stylesheet" href="8cols.css">
 </head>
 <body>
-    <p>
-      <strong>C</strong>ascading
-      <strong>S</strong>tyle
-      <strong>S</strong>heets
-    </p>
-
     <div class="section group">
         <div class="col span_8_of_8">
         The header, spanning 8 of 8
@@ -33,22 +27,44 @@
         </div>
     </div>
 
-    <div id="footercontainer">
-        <footer class="group">
-            <div class="col span_8_of_8">
-            <h4>About the Responsive Grid System</h4>
-            <p>Inspired by <a href="http://ethanmarcotte.com/">Ethan Marcotte</a>'s responsive web design, I found something that works for me, and I want to share it.</p>
-            <p>Go to the <a href="http://www.responsivegridsystem.com">home page</a>.</p>
-            </div>
 
-            <br class="breaker">
+    <header class="section">
+        <div class="col span_8_of_8">
+            Title Page
+        </div>
+    </header>
 
-            <div id="smallprint">
-            <span class="heart">♥</span> Lovingly <a href="http://www.madeinnewcastle.co.uk">made in Newcastle upon Tyne</a>.
-            </div>
+    <nav>navigation</nav>
 
-        </footer>
-    </div>
+    <section class="section group">
+        <div class="col span_5_of_8">
+          <h1>Forest elephants</h1>
+          <section>
+            <h1>Introduction</h1>
+            <p>In this section, we discuss the lesser known forest elephants.</p>
+          </section>
+          <section>
+            <h1>Habitat</h1>
+            <p>Forest elephants do not live in trees but among them.</p>
+          </section>
+          <aside>
+            <p>advertising block</p>
+          </aside>
+        </div>
+    </section>
+
+    <section class="section group">
+        <div class="col span_3_of_8">
+            <h1>Forest elephants</h1>
+        </div>
+    </section>
+
+
+    <footer class="group">
+        <div class="col span_8_of_8">
+            <p>(c) 2010 The Example company</p>
+        </div>
+    </footer>
 
 </body>
 </html>
