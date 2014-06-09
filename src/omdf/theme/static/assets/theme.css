@@ -1,0 +1,33 @@
+/* Theme-specific styling
+ */
+
+
+/* Footer */
+
+#footer {
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+#footer li {
+    list-style: none;
+}
+
+#portal-siteactions li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.omdf-footer {
+    background: #333;
+    color: #8C989E;
+}
+
+.omdf-footer a {
+    color: #8C989E;
+}
+
+.omdf-footer a:hover {
+    color: #0078A0;
+}
