@@ -21,18 +21,6 @@
           </a>
         </div>
         <div class="large-2 columns">
-          <ul id="account-info" class="nav pull-right">
-            <li class="dropdown">
-              <a href="#"
-                    class="dropdown-toggle"
-                    data-toggle="dropdown">
-                    Account
-                    <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-              </ul>
-            </li>
-          </ul>
           <form id="searchbox" class="navbar-search pull-right">
             <input type="text" class="search-query" placeholder="Search">
           </form>
@@ -54,6 +42,30 @@
       </div>
 
     </div> <!-- navigation -->
+
+
+<div class="off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap">
+
+    <a class="left-off-canvas-toggle" href="#" >Menu</a>
+
+    <!-- Off Canvas Menu -->
+    <aside class="left-off-canvas-menu" >
+        <!-- whatever you want goes here -->
+        <ul id="account-info">
+          <li><a href="#">Item 1</a></li>
+        ...
+        </ul>
+    </aside>
+
+    <!-- main content goes here -->
+    <p>Set in the year 0 F.E. ("Foundation Era"), The Psychohistorians opens on Trantor, the capital of the 12,000-year-old Galactic Empire. Though the empire appears stable and powerful, it is slowly decaying in ways that parallel the decline of the Western Roman Empire. Hari Seldon, a mathematician and psychologist, has developed psychohistory, a new field of science and psychology that equates all possibilities in large societies to mathematics, allowing for the prediction of future events.</p>
+
+  <!-- close the off-canvas menu -->
+  <a class="exit-off-canvas"></a>
+
+  </div>
+</div>
 
 
       <div class="row">
@@ -79,6 +91,7 @@
     <script src="foundation/js/vendor/jquery.js"></script>
     <script src="foundation/js/foundation/foundation.js"></script>
     <script src="foundation/js/foundation/foundation.topbar.js"></script>
+    <script src="foundation/js/foundation/foundation.offcanvas.js"></script>
     <!-- Other JS plugins can be included here -->
 
     <script>
