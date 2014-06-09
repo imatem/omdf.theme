@@ -27,6 +27,9 @@
         <copy attributes="action" css:theme="#searchbox" css:content="#portal-searchbox form" />
         <copy attributes="name" css:theme="#searchbox .search-query" css:content="#portal-searchbox form .searchField" />
 
+        <!-- Breadcrumbs-->
+<!--         <replace css:theme-children="#portal-breadcrumbs" css:content-children="portal-breadcrumbs" />
+ -->
         <!-- Edit bar -->
         <before css:theme-children="#content" css:content="#edit-bar" />
 
