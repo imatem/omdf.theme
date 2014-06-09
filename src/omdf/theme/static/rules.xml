@@ -7,25 +7,39 @@
     <!-- Apply the following rules to standard Plone pages -->
     <rules css:if-content="#visual-portal-wrapper">
 
-        <theme href="index.html" />
+        <theme href="foundation.html" />
 
-        <!-- Replace title with Plone's page title  -->
+        <!-- Head elements -->
         <replace css:theme="html head title" css:content="html head title" />
+        <after css:theme-children="html head" css:content="html head base" />
+        <after css:theme-children="html head" css:content="html head script" />
 
-        <!-- Copy base tag from Plone -->
-        <before css:theme-children="html head" css:content="html head base" />
+        <!-- Logo -->
+        <copy attributes="href" css:theme="#brand" css:content="#portal-logo" />
 
-        <!-- Copy link, style, meta tags from Plone head -->
-        <after css:theme-children="html head"
-               content="/html/head/link | /html/head/style | /html/head/meta" />
+        <!-- Tabs -->
+        <replace css:theme-children="#tabs" css:content-children="#portal-globalnav" />
 
-        <!-- merge classes from Plone body with theme body -->
-        <merge attributes="class" css:theme="body" css:content="body" />
+        <!-- Personal tools -->
+        <replace css:theme="#account-info" css:content="#portal-personaltools" />
 
-        <!-- Copy script tags from Plone head to end of body -->
-        <after css:theme-children="html body" css:content="html head script" />
+        <!-- Search -->
+        <copy attributes="action" css:theme="#searchbox" css:content="#portal-searchbox form" />
+        <copy attributes="name" css:theme="#searchbox .search-query" css:content="#portal-searchbox form .searchField" />
 
-        <!-- Insert your own rules here -->
+        <!-- Edit bar -->
+        <before css:theme-children="#content" css:content="#edit-bar" />
+
+        <!-- Portal messages -->
+
+        <!-- Main columns -->
+        <replace css:content-children="#content" css:theme-children="#content" />
+        <!-- <replace css:content-children="#portal-column-one" css:theme-children="#left-column" /> -->
+        <replace css:content-children="#portal-column-two" css:theme-children="#right-column" />
+
+        <!-- Footer -->
+        <replace css:theme-children="#footer" css:content-children="#portal-footer" />
+        <after css:theme-children="#footer" css:content="#portal-siteactions" />
 
     </rules>
 
