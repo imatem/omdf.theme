@@ -21,7 +21,7 @@
         <replace css:theme-children="#tabs" css:content-children="#portal-globalnav" />
 
         <!-- Personal tools -->
-        <replace css:theme="#account-info" css:content="#portal-personaltools" />
+        <replace css:theme-children="#account-info" css:content-children="#portal-personaltools" />
 
         <!-- Search -->
         <copy attributes="action" css:theme="#searchbox" css:content="#portal-searchbox form" />
