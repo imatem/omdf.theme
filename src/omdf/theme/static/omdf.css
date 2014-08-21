@@ -1,0 +1,24 @@
+body {
+    background-color: #f7f7fa;
+}
+
+.top-bar {
+    min-height: 35px;
+    background-color: forestgreen;
+}
+
+#navigation {
+    font-size: 13px;
+    float: right;
+}
+
+.header .logo {
+float: left;
+line-height: 0;
+}
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+}

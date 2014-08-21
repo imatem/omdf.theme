@@ -7,39 +7,44 @@
     <!-- Apply the following rules to standard Plone pages -->
     <rules css:if-content="#visual-portal-wrapper">
 
-        <theme href="foundation.html" />
+        <theme href="theme.html" />
 
         <!-- Head elements -->
         <replace css:theme="html head title" css:content="html head title" />
         <after css:theme-children="html head" css:content="html head base" />
+        <after css:theme-children="html head" css:content="html head link" />
+        <after css:theme-children="html head" css:content="html head style" />
         <after css:theme-children="html head" css:content="html head script" />
 
         <!-- Logo -->
-        <copy attributes="href" css:theme="#brand" css:content="#portal-logo" />
+        <copy attributes="href" css:theme=".header-logo a" css:content="#portal-logo" />
 
         <!-- Tabs -->
-        <replace css:theme-children="#tabs" css:content-children="#portal-globalnav" />
+        <replace css:theme-children="#menu-nav" css:content-children="#portal-globalnav" />
 
         <!-- Personal tools -->
-        <replace css:theme-children="#account-info" css:content-children="#portal-personaltools" />
+        <!-- <replace css:theme-children="#account-info" css:content-children="#portal-personaltools" /> -->
 
         <!-- Search -->
-        <copy attributes="action" css:theme="#searchbox" css:content="#portal-searchbox form" />
-        <copy attributes="name" css:theme="#searchbox .search-query" css:content="#portal-searchbox form .searchField" />
+        <!-- <copy attributes="action" css:theme="#searchbox" css:content="#portal-searchbox form" /> -->
+        <!-- <copy attributes="name" css:theme="#searchbox .search-query" css:content="#portal-searchbox form .searchField" /> -->
 
         <!-- Edit bar -->
-        <before css:theme-children="#content" css:content="#edit-bar" />
+        <replace css:theme="#edit-bar-container" css:content="#edit-bar" />
 
         <!-- Portal messages -->
 
+        <!-- Portal breadcrumbs -->
+        <replace css:theme-children="#breadcrumbs-container" css:content-children="#portal-breadcrumbs" />
+
         <!-- Main columns -->
-        <replace css:content-children="#content" css:theme-children="#content" />
+        <replace css:content-children="#content" css:theme-children="#content" /> -->
         <!-- <replace css:content-children="#portal-column-one" css:theme-children="#left-column" /> -->
-        <replace css:content-children="#portal-column-two" css:theme-children="#right-column" />
+        <!-- <replace css:content-children="#portal-column-two" css:theme-children="#right-column" /> -->
 
         <!-- Footer -->
-        <replace css:theme-children="#footer" css:content-children="#portal-footer" />
-        <after css:theme-children="#footer" css:content="#portal-siteactions" />
+        <!-- <replace css:theme-children="#footer" css:content-children="#portal-footer" /> -->
+        <!-- <after css:theme-children="#footer" css:content="#portal-siteactions" /> -->
 
     </rules>
 
